@@ -27,7 +27,7 @@ def download_files(target_dir: str | pathlib.Path = pathlib.Path("downloads")):
         download_file(download_uri, target_dir)
 
 def extract_filename(download_uri: str) -> str:
-    return download_uri.split("/")[-1].split(".")[0]
+    return download_uri.split("/")[-1]
 
 def download_file(download_uri: str, target_dir: pathlib.Path) -> None: 
     # Extract the filename: 
